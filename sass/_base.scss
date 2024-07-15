@@ -1,0 +1,190 @@
+body {
+  font-family: $font-family;
+}
+header {
+  /* header */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+
+
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+}
+
+.container {
+  /* container */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  flex-grow: 0;
+
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  text-decoration: none;
+  color: rgb(64, 63, 61);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.logo {
+  /* logo */
+
+  width: 100px;
+  height: 60px;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}
+
+.nav {
+  /* nav */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  gap: 40px;
+
+
+
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 1;
+
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  height: 28px;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-decoration: none;
+  color: $color-text-dark;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+.coffee-menu {
+  /* coffee-menu */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+
+  height: 28px;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+
+}
+
+
+
+
+
+
+.offer{
+  h1{
+    margin: 0;
+    font-size: 72px; // Adjust as needed
+    font-weight: 600;
+  }
+  p{
+    margin: 0;
+    font-size: 16px; // Adjust as needed
+    font-weight: 400;
+  }
+  span {
+    font-weight: 600;
+  }
+}
+
+
+
+
+
+
+.container4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 20px;
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .image-container {
+    flex: 1 1 calc(50% - 10px);
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
+    object-fit: cover;
+  }
+
+  .image-container:hover img {
+    transform: scale(1);
+  }
+  h1 {
+    text-align: left;
+    font-size: 56px;
+    color: $color-text-dark;
+    line-height: 125%;;
+    font-weight: 600;
+    span {
+      font-weight: bold;
+      font-style: italic;
+      color: $color-accent;
+    }
+  }
+}

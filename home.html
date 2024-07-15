@@ -1,0 +1,180 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="home-page">
+<header>
+    <div class="container">
+        <div class="header-menu">
+            <div class="logo">
+                <img src="svg/logo.svg" alt="logo">
+            </div>
+            <nav>
+                <ul class="nav">
+                    <li class="menu-item"><a href="#">Favorite coffee</a></li>
+                    <li class="menu-item"><a href="#">About</a></li>
+                    <li class="menu-item"><a href="#">Mobile app</a></li>
+                    <li class="menu-item"><a href="#">Contact us</a></li>
+                </ul>
+                <div class="burger-menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </nav>
+            <div class="coffee-menu">
+                <a class="menu-item" href="menu.html">
+                    <p>Menu</p>
+                    <img src="svg/coffee-cup.svg" alt="coffee-cup">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div id="img-container">
+            <img class="image" src="img/img.png" alt="picha1">
+            <div class="offer">
+                <h1><span class="highlight">Enjoy</span> premium coffee at our charming cafe</h1>
+                <p>With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.</p>
+                <button class="button-primary" onclick="location.href='menu.html';">
+                    <span>Menu</span>
+                    <img src="svg/coffee-cup.svg" alt="coffee-cup">
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="swiper-container">
+    <h1>Choose your <span>favorite</span> coffee</h1>
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="img/coffee-1.png" alt="Coffee 1">
+            <div class="slide-info">
+                <h2>S’mores Frappuccino</h2>
+                <p>This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
+                <h1>$5.50</h1>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <img src="img/coffee-2.png" alt="Coffee 2">
+            <div class="slide-info">
+                <h2>Caramel Macchiato</h2>
+                <p>Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under whipped thick foam.</p>
+                <h1>$5.00</h1>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <img src="img/coffee-3.png" alt="Coffee 3">
+            <div class="slide-info">
+                <h2>Ice coffee</h2>
+                <p>A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.</p>
+                <h1>$4.50</h1>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-button-next custom-swiper-button">
+        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.5" y="0.5" width="59" height="59" rx="29.5" stroke="#665F55"/>
+            <path d="M24 30H36.5M36.5 30L30.5 24M36.5 30L30.5 36" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    <div class="swiper-button-prev custom-swiper-button">
+        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.5" y="0.5" width="59" height="59" rx="29.5" stroke="#665F55"/>
+            <path d="M36.5 30H24M24 30L30 24M24 30L30 36" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+        <div class="progress-bar"></div>
+        <div class="progress-bar"></div>
+    </div>
+</div>
+
+
+<div class="container4">
+    <h1>Resource is <span>the perfect and cozy place</span> where you can enjoy a variety of hot beverages, relax, catch up with friends, or get some work done.</h1>
+    <div class="images">
+        <div class="image-container">
+            <img src="img/about-1.jpg" alt="Image 1">
+        </div>
+        <div class="image-container cropped">
+            <img src="img/about-3.jpg" alt="Image 2">
+        </div>
+        <div class="image-container cropped">
+            <img src="img/about-2.jpg" alt="Image 3">
+        </div>
+        <div class="image-container">
+            <img src="img/about-4.jpg" alt="Image 4">
+        </div>
+    </div>
+</div>
+<div class="mobile-app">
+    <div class="mobile-info">
+        <h1>Download <span>our apps to start ordering</span></h1>
+        <p>Download the Resource app today and experience the comfort of ordering your favorite coffee from wherever you are</p>
+        <div>
+            <button class="animated-button" onclick="location.href='https://appstore.com';">
+                <img src="svg/applestore-defoult.svg" alt="applestore" class="icon default">
+                <img src="svg/applestore-hover.svg" alt="applestore" class="icon hover">
+            </button>
+
+            <button class="animated-button" onclick="location.href='https://googleplay.com';">
+                <img src="svg/googleplay-defoult.svg" alt="googleplay" class="icon default">
+                <img src="svg/googleplay-hover.svg" alt="googleplay" class="icon hover">
+            </button>
+        </div>
+    </div>
+    <img src="img/mobile-screens.png" alt="phones">
+</div>
+
+
+<footer>
+    <div class="container1">
+        <div class="offer1">
+            <h1>Sip, Savor, Smile.<br><span>It’s coffee time!</span></h1>
+            <div class="socials">
+                <button class="button-icon-light" onclick="location.href='https://twitter.com';">
+                    <img src="svg/button-twitter.svg" alt="twitter" class="social-icon default">
+                </button>
+                <button class="button-icon-light" onclick="location.href='https://instagram.com';">
+                    <img src="svg/button-instagram.svg" alt="instagram" class="social-icon">
+                </button>
+                <button class="button-icon-light" onclick="location.href='https://facebook.com';">
+                    <img src="svg/button-fasebook.svg" alt="facebook" class="social-icon">
+                </button>
+            </div>
+        </div>
+        <div class="contacts-info">
+            <h2>Contact us</h2>
+            <button class="link-item link-border" onclick="location.href='https://maps.app.goo.gl/wemH4ktcfsUrgNKs7';">
+                <img src="svg/pin-alt.svg" alt="pin">
+                <span>8558 Green Rd.,  LA</span>
+            </button>
+            <button class="link-item link-border">
+                <img src="svg/phone.svg" alt="phone">
+                <span>+1 (603) 555-0123</span>
+            </button>
+            <button class="link-item">
+                <img src="svg/clock.svg" alt="clock">
+                <span>Mon-Sat: 9:00 AM – 23:00 PM</span>
+            </button>
+        </div>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/color.js"></script>
+</body>
+
+</html>

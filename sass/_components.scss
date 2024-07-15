@@ -1,0 +1,252 @@
+.menu-item {
+  a {
+    @include button-line-animation($color-border-dark, $line-border);
+  }
+}
+.coffee-menu {
+  a {
+    @include button-line-animation($color-border-dark, $line-border);
+  }
+}
+
+.burger-menu {
+  background: $color-background-backdrop;
+  border: 1px solid $color-border-light;
+  padding: 0.5rem;
+  cursor: pointer;
+
+  &:after {
+    content: '☰';
+    font-size: 1.5rem;
+    color: $color-text-light;
+  }
+}
+
+
+.button-primary {
+  background-color: $color-text-light;
+  color: $color-text-dark;
+  border-radius: 100px;
+  border: none;
+  width: 200px;
+  height: 64px;
+
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    img {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    span {
+      transform: translateX(-20px);
+    }
+  }
+  img {
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+  }
+
+  @include respond-to(tablet) {
+    padding: 8px 16px;
+  }
+
+  @include respond-to(mobile) {
+    padding: 6px 12px;
+  }
+}
+.highlight {
+  font-style: italic;
+  color: $color-accent;
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 60px !important;
+  height: 60px !important;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-size: 60px 60px;
+  border-radius: 50%;
+  transition: background-color 0.6s ease;
+}
+
+.custom-swiper-button.swiper-button-prev {
+  left: 10px;
+  background-color: transparent; /* Remove background-image */
+}
+
+.custom-swiper-button.swiper-button-next {
+  right: 10px;
+  background-color: transparent; /* Remove background-image */
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  display: none;
+}
+
+.custom-swiper-button:hover,
+.custom-swiper-button:active {
+  background-color: $color-background-container;
+}
+
+.custom-swiper-button:hover svg path,
+.custom-swiper-button:active svg path {
+  stroke: $color-text-light !important;
+}
+
+
+.progress-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.progress-bar {
+  width: 40px;
+  height: 4px;
+  background-color: #C1B6AD;
+  margin: 0 5px;
+  position: relative;
+
+  &.active {
+    background-color: #665F55;
+  }
+}
+
+
+
+
+
+.mobile-app{
+  .mobile-info{
+    h1{
+      color: $color-accent;
+      font-size: 60px;
+      font-weight: 600;
+      font-style: italic;
+      span {
+        font-style: normal;
+        color: $color-text-dark;
+      }
+    }
+    p {
+      font-size: 16px;
+
+    }
+  }
+}
+
+
+.animated-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  padding: 0;
+  width: 200px;
+  height: 64px;
+}
+
+.icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.default {
+  opacity: 1;
+}
+
+.hover {
+  opacity: 0;
+}
+
+.animated-button:hover .default {
+  opacity: 0;
+}
+
+.animated-button:hover .hover {
+  opacity: 1;
+}
+
+
+
+
+
+
+.container1 {
+  .offer1{
+    .socials{
+      display: flex;
+      justify-content: flex-start;
+      gap: 12px;
+      .button-icon-light{
+        @include button-fill-animation($color-background-body);
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        cursor: pointer;
+        .social-icon {
+          width: 60px;
+          height: 60px;
+        }
+      }
+    }
+    h1 {
+      font-size: 60px;
+      font-weight: 600;
+      color: $color-text-light;
+      span{
+        font-size: 60px;
+        font-weight: 600;
+        color: $color-accent;
+      }
+    }
+  }
+  .contacts-info{
+    h2 {
+      font-size: 24px;
+      color: $color-text-light;
+    }
+    .link-border{
+      span{
+        @include button-line-animation($color-border-light, $line-border);
+      }
+
+    }
+    .link-item{
+      background: none;
+      border: none;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 4px;
+      span{
+        font-weight: 600;
+        font-size: 16px;
+        color: $color-text-light;
+      }
+    }
+  }
+}
